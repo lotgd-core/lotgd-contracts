@@ -23,29 +23,27 @@ namespace Lotgd\Bundle\Contract;
 interface LotgdBundleInterface
 {
     /**
-     * Display name
+     * Display name.
      */
     public function getLotgdName(): string;
 
     /**
      * Version for display.
-     *
-     * @return string
      */
     public function getLotgdVersion(): string;
 
     /**
      * Name of icon to show in list.
      */
-    public function getLotgdIcon(): string;
+    public function getLotgdIcon(): ?string;
 
     /**
      * Description for Lotgd Bundle.
      */
-    public function getLotgdDescription(): string;
+    public function getLotgdDescription(): ?string;
 
     /**
      * Url for download LoTGD Bundle.
      */
-    public function getLotgdDownload(): string;
+    public function getLotgdDownload(): ?string;
 }
